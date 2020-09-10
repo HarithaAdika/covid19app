@@ -1,7 +1,7 @@
 
 
 
-  <nav class="navbar navbar-default">
+  <!-- <nav class="navbar navbar-default">
   <div class="container-fluid">
       <ul class="nav navbar-nav">
        <button class="btn navbar-btn active"><a class="nav-link active" routerLink="/symptoms-component" routerLinkActive="active">Symptoms</a></button>
@@ -9,8 +9,41 @@
       <button><a class="nav-link active" routerLink="/prevention-component" routerLinkActive="active">Treatment</a></button>
     </ul>
    </div>
-  </nav>
+  </nav> -->
+<!-- <nav class="navbar navbar-dark bg-secondary navbar-expand-lg">
+  <div class="container-fluid px-0">
+    <div class="row w-100">
+      <div class="col-2">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerInfo" aria-controls="navbarTogglerInfo" aria-expanded="false" aria-label="Toggle navigation" (click)="isShown = !isShown" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
 
-
+      <div class="col-10">
+        <div class="collapse justify-content-center navbar-collapse" [ngClass]="{ 'show': isShown }" id="navbarTogglerInfo">
+          <ul class="navbar-nav mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <button class="btn navbar-btn active"><a class="nav-link active" routerLink="/symptoms-component" routerLinkActive="active" (click)="isShown = false">Symptoms</a></button>
+              
+            </li>
+            <li class="nav-item">
+              <button class="btn navbar-btn active"><a class="nav-link active" routerLink="/treatment-component" routerLinkActive="active" (click)="isShown = false">Prevention</a></button>
+              
+            </li>
+            <li class="nav-item">
+              <button class="btn navbar-btn active"><a class="nav-link active" routerLink="/prevention-component" routerLinkActive="active" (click)="isShown = false">Treatment</a></button>
+              
+            </li>       
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav> -->
+<ul class="nav nav-tabs bg-light">
+  <li class="active"><button class="btn navbar-btn active"><a class="nav-link active" routerLink="/symptoms-component" routerLinkActive="active" (click)="isShown = false">Symptoms</a></button></li>
+  <li><button class="btn navbar-btn active"><a class="nav-link active" routerLink="/treatment-component" routerLinkActive="active" (click)="isShown = false">Prevention</a></button></li>
+  <li><button class="btn navbar-btn active"><a class="nav-link active" routerLink="/prevention-component" routerLinkActive="active" (click)="isShown = false">Treatment</a></button></li>
+</ul>
 <router-outlet></router-outlet>
 

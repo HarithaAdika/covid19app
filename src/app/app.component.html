@@ -1,6 +1,6 @@
-<h1>Covid 19 in India</h1>
+<h1 class="header">Covid 19 in India</h1>
 
-<nav>
+<!-- <nav>
 <ul class="nav flex-column">
   <li class="nav-item" id="home">
     <a class="nav-link active" routerLink="/home-component" routerLinkActive="active">Home</a>
@@ -8,10 +8,33 @@
   <li class="nav-item" id="info">
     <a class="nav-link" routerLink="/info-component" routerLinkActive="active">Covid 19 Info </a>
   </li>
-  <li class="nav-item">
+  <li class="nav-item" id="stats">
     <a class="nav-link" routerLink="/stats-component" routerLinkActive="active">statistics</a>
   </li>
   
 </ul>
-</nav>
+</nav> -->
+<div class="row">
+  <div class="home">Home</div>
+  <div class="info">Covid 19 Info</div>
+  <div class="stats">Statistics</div>
+</div>
+
+<div class="row">
+  <div class="column home" >
+    <a class="nav-link active" routerLink="/home-component" routerLinkActive="active">Home</a>
+    <a class="nav-link" routerLink="/info-component" routerLinkActive="active">Covid 19 Info </a>
+    <a class="nav-link" routerLink="/stats-component" routerLinkActive="active">statistics</a>
+  </div>
+  <div class="column info" >
+    <a class="nav-link" routerLink="/info-component" routerLinkActive="active">Covid 19 Info </a>
+  </div>
+  <div class="column stats">
+  <a class="nav-link" routerLink="/stats-component" routerLinkActive="active">statistics</a>
+    
+  </div>
+</div>
+
 <router-outlet></router-outlet>
+
+

@@ -11,5 +11,5 @@ export class InfoComponent implements OnInit {
 
   ngOnInit() {
   }
-
+isShown:boolean=false;
 }

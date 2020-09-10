@@ -1,3 +1,66 @@
-p {
-  font-family: Lato;
+.header {
+  background-color: #ff8000;
+  text-align: center;
+  
+  padding: 10px;
+  height:70px;
+}
+#home {
+  float: left;
+  width:25%;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+#info{
+  width: 50%;
+}
+#stats{
+  float:right;
+  width: 25%;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  #stats, #info {
+    width: 100%;
+  }
+}
+
+
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.home, .stats {
+  width: 25%;
+}
+.home{
+  background-color:#808080;
+}
+
+.info {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  #stats, #info {
+    width: 100%;
+  }
 }
